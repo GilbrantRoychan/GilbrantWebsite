@@ -5,4 +5,5 @@ home = Blueprint('home',__name__)
 
 @home.route('/')
 def index():
-    return render_template('base.html')
+    linkwa = 'https://api.whatsapp.com/send/?phone=62089504455462&text&type=phone_number&app_absent=0'
+    return render_template('base.html',wa = linkwa )
