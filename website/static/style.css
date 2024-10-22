@@ -1,0 +1,149 @@
+:root {
+    --primaryColor: #FFEDA5;
+    --CTA: #600004;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+
+.container {
+    width: 100%;
+
+    padding: 0 50px;
+    box-sizing: border-box;
+    background-color: var(--primaryColor);
+
+}
+
+.container .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+    box-sizing: border-box;
+
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: var(--CTA);
+    font-weight: bold;
+
+}
+
+.navbar .navlinks {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--CTA);
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+
+.navbar .btn {
+    background-color: var(--CTA);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+
+.container .main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main h1 {
+    font-size: 62px;
+    font-weight: bold;
+    color: var(--CTA);
+    font-family: monospace;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    /* Tersembunyi untuk menciptakan efek */
+    border-right: 3px solid var(--CTA);
+    /* Simulasi kursor */
+    animation: typing 2s steps(30, end) infinite, blink 4s step-end infinite;
+}
+
+.main p {
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+    right: 150px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--CTA);
+    margin-top: -50px;
+    opacity: 0;
+    animation: slideDown 1s ease-in-out forwards;
+
+}
+
+@keyframes slideDown {
+    0% {
+        /* Mulai dari di luar kontainer (di atas) */
+        opacity: 0;
+        /* Tidak terlihat */
+    }
+
+    50% {
+        opacity: 1;
+
+        /* Mulai terlihat */
+    }
+
+    100% {
+        top: 0;
+        /* Teks berada di posisinya yang benar */
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100vh;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--CTA);
+        width: max-content;
+
+    }
+}

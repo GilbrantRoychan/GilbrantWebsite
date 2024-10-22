@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoychanGill</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+    <!-- Import Font from Google Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <p class="logo">Roychangill.</p>
+
+            <ul class="navlinks">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <button class="btn" onclick="window.open('https:wa.me/62089504455462', '_blank')">Lets talks
+                <img src="{{url_for('static', filename='images/logo/arrow.svg')}}" alt="logo">
+            </button>
+        </nav>
+        <section class="main">
+            <h1>Gilbrant Roychan kholbi.</h1>
+            <p>as Python Developer</p>
+        </section>
+    </div>
+</body>
+
+</html>
