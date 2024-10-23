@@ -1,0 +1,22 @@
+{%block styles%}
+<link rel="stylesheet" href="{{url_for('static',filename='aboutMe.css')}}">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+</style>
+{%endblock%}
+{%block about_me%}
+<div class="container_about">
+    <div class="image">
+        <img src="{{url_for('static', filename='images/profil.jpeg')}}" alt="profile">
+    </div>
+    <div class="descriptions">
+        <h1>About Me</h1>
+        <p>My name is Gilbrant, Iam {{umur}} years old and from Indonesia. Currently, Iam learning Python with the
+            goal
+            of
+            becoming a Data Analyst or ML Developer in the future. I believe that with skills in data analysis and
+            machine
+            learning, I can create impactful and innovative solutions.</p>
+    </div>
+</div>
+{%endblock%}

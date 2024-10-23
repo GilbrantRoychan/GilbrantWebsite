@@ -14,24 +14,31 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <p class="logo">Roychangill.</p>
 
-            <ul class="navlinks">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <a class="btn" href='{{wa}}' target="_blank">Lets talks
-                <img src="{{url_for('static', filename='images/logo/arrow.svg')}}" alt="logo">
-            </a>
-        </nav>
+    {% include 'navbar.html' %}
+
+    <div class="container">
         <section class="main">
             <h1>Gilbrant Roychan kholbi.</h1>
             <p>as Python Developer</p>
         </section>
     </div>
+    <section class="about">
+        {%block about_me%}
+        {%include about %}
+        {%endblock%}
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > window.innerHeight) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>

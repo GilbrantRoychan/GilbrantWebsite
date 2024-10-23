@@ -1,0 +1,20 @@
+{%block styles%}
+<link rel="stylesheet" href="{{url_for('static',filename='navbar.css')}}">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+</style>
+{%endblock%}
+
+{%block navbar%}
+<nav class="navbar">
+    <p class="logo">Roychangill.</p>
+    <ul class="navlinks">
+        <li><a href="{{url_for('home.index')}}">Home</a></li>
+        <li><a href="{{url_for('home.aboutMe')}}">About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <a class="btn" href='{{wa}}' target="_blank">Lets talks
+        <img src="{{url_for('static', filename='images/logo/arrow.svg')}}" alt="logo">
+    </a>
+</nav>
+{%endblock%}

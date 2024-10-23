@@ -1,0 +1,71 @@
+:root {
+    --primaryColor: #FFEDA5;
+    --CTA: #600004;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+
+.container_about {
+    padding: 0 50px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 180px;
+
+
+}
+
+.container_about .image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    display: block;
+    max-width: 700px;
+    max-height: 537px;
+}
+
+.container_about .descriptions {
+    text-align: start;
+
+}
+
+.descriptions h1 {
+    font-size: 40px;
+    text-align: center;
+    color: var(--CTA);
+}
+
+.descriptions p {
+
+    display: block;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 520px) {
+
+    .container_about {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+
+
+    .container_about .descriptions {
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 1272px) {}

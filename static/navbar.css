@@ -1,0 +1,99 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 50px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    background-color: var(--primaryColor);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: var(--CTA);
+    font-weight: bold;
+
+}
+
+.navbar .navlinks {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--CTA);
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+
+.navbar .btn {
+    background-color: var(--CTA);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    cursor: pointer;
+    text-decoration: none;
+    background: linear-gradient(to right, #7D000B, var(--CTA));
+
+}
+
+.navbar .btn:hover {
+    background: linear-gradient(to right, var(--CTA), #7D000B);
+}
+
+@keyframes gradient-animation {
+    from {
+        background-position: right;
+    }
+
+    to {
+        background-position: left;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .container {
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+
+
+    .navbar {
+        width: auto;
+        display: flex;
+        padding: 15px;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .navbar .logo {
+        font-size: 33px;
+    }
+
+    .navbar .navlinks,
+    .btn {
+        display: none;
+    }
+}

@@ -17,59 +17,6 @@
 
 }
 
-.container .navbar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 35px 0;
-    box-sizing: border-box;
-
-}
-
-.navbar .logo {
-    font-size: 24px;
-    color: var(--CTA);
-    font-weight: bold;
-
-}
-
-.navbar .navlinks {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--CTA);
-    display: flex;
-    flex-direction: row;
-    gap: 160px;
-    list-style-type: none;
-    text-decoration: none;
-
-}
-
-.navlinks a {
-    text-decoration: none;
-    color: inherit;
-
-}
-
-
-
-.navbar .btn {
-    background-color: var(--CTA);
-    border: none;
-    color: white;
-    font-size: 18px;
-    padding: 12px 24px;
-    cursor: pointer;
-    text-decoration: none;
-    background: linear-gradient(to right, #7D000B, var(--CTA));
-
-}
-
-.navbar .btn:hover {
-    background: linear-gradient(to right, var(--CTA), #7D000B);
-}
 
 .container .main {
     display: flex;
@@ -105,6 +52,13 @@
     opacity: 0;
     animation: slideDown 2s ease-in-out forwards;
 
+}
+
+
+/* section about me */
+.container .about {
+    width: 100%;
+    background-color: red;
 }
 
 @keyframes slideDown {
@@ -171,25 +125,6 @@
         width: 100%;
         overflow: hidden;
 
-    }
-
-
-
-    .container .navbar {
-        width: auto;
-        display: flex;
-        padding: 15px;
-        box-sizing: border-box;
-        justify-content: center;
-    }
-
-    .navbar .logo {
-        font-size: 33px;
-    }
-
-    .navbar .navlinks,
-    .btn {
-        display: none;
     }
 
     .container .main {
