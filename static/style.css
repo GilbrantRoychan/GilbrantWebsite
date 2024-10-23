@@ -166,7 +166,7 @@
 
 /* responsive website */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
     .container {
         width: 100%;
         overflow: hidden;
@@ -181,6 +181,10 @@
         padding: 15px;
         box-sizing: border-box;
         justify-content: center;
+    }
+
+    .navbar .logo {
+        font-size: 33px;
     }
 
     .navbar .navlinks,
