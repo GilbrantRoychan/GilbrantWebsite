@@ -54,12 +54,17 @@
 
 @media screen and (max-width: 520px) {
 
+
     .container_about {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
         padding: 0 50px;
-        margin-bottom: 300px;
+
+    }
+
+    .container_about .image img {
+        width: 100%;
     }
 
 

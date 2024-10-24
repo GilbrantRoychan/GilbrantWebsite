@@ -121,6 +121,8 @@
 /* responsive website */
 
 @media screen and (max-width: 520px) {
+
+
     .container {
         width: 100%;
         overflow: hidden;
